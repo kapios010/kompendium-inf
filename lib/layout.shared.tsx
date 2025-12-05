@@ -10,7 +10,7 @@ export function baseOptions(): BaseLayoutProps {
       },
       {
         text: 'Kompendium',
-        url: '/kompendium'
+        url: '/kompendium/teoria'
       },
       {
         text: 'Blog',
@@ -20,6 +20,6 @@ export function baseOptions(): BaseLayoutProps {
     githubUrl: 'https://github.com/kapios010/kompendium-inf',
     nav: {
       title: 'Kompendium Inf*',
-    },
+    }
   };
 }

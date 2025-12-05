@@ -1,0 +1,11 @@
+{
+    "root":true,
+    "title": "Teoria",
+    "description": "Wszystko, co nie wymaga użycia komputera",
+    "icon": "Pencil",
+    "defaultOpen":true,
+    "pages": [
+        "index",
+        "---Systemy Liczbowe---"
+    ]
+}
