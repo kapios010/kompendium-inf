@@ -27,15 +27,9 @@ body:
       label: Opis Błędu
       description: Gdzie dokładnie jest błąd? Na czym polega?
       placeholder: |
-<<<<<<< HEAD
         Błąd jest we fragmencie o ...
         Pisze tam, że ...
         Jest to nieprawda, ponieważ ...
-=======
-      Błąd jest we fragmencie o ... |
-      Pisze tam, że ... |
-      Jest to nieprawda, ponieważ ... |
->>>>>>> c5c5d307633ab2de1837cba4e70b0ccc15584e2f
     validations:
       required: true
   - type: checkboxes
