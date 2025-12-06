@@ -1,0 +1,39 @@
+name: Niepoprawne Informacje
+description: Zgłoś stronę kompendium zawierającą niepoprawne lub niekompletne informacje.
+title: "[RZECZOWY]: "
+labels: ["Błąd Rzeczowy"]
+body:
+  - type: input
+    attributes:
+      label: URL Strony
+      description: Na jakiej stronie występuje błąd? (możesz pominąć domenę)
+      placeholder: https://kompendium.kapios.dev/kompendium/teoria
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Rodzaj Błędu
+      description: Jak poważny jest błąd?
+      multiple: false
+      options:
+        - Literówka
+        - Niekompletne informacje
+        - Może wprowadzić w błąd
+        - Bzdura (kompletnie nieprawdziwe)
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      label: Opis Błędu
+      description: Gdzie dokładnie jest błąd? Na czym polega?
+      placeholder: |
+      Błąd jest we fragmencie o ...
+      Pisze tam, że ...
+      Jest to nieprawda, ponieważ ...
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Formalności
+      options:
+        - label: Poszukałem/-am w repo, czy ktoś nie zgłosił już tego błędu.
