@@ -37,5 +37,6 @@ body:
       label: Formalności
       options:
         - label: Poszukałem/-am w repo, czy ktoś nie zgłosił już tego błędu.
+          required: true
     validations:
       required: true
