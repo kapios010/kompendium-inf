@@ -1,6 +1,6 @@
 name: Niepoprawne Informacje
 description: Zgłoś stronę kompendium zawierającą niepoprawne lub niekompletne informacje.
-title: "[RZECZOWY]: "
+title: "[Rzeczówka]: "
 labels: ["Błąd Rzeczowy"]
 body:
   - type: input
