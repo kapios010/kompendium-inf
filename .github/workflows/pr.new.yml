@@ -1,6 +1,6 @@
 # Workflow taken and mixed from @sveltejs my beloved
 name: Publish Any Commit
-on: [push, pull_request]
+on: [pull_request]
 
 permissions: 
     contents: read
@@ -23,8 +23,5 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-      - name: Lint
-        if: (${{ success() }} || ${{ failure() }}) # ensures this step runs even if previous steps fail (avoids multiple runs uncovering different issues at different steps)
-        run: pnpm run lint
       - name: Build
         run: pnpm run build
