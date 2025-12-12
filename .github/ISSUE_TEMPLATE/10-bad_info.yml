@@ -7,7 +7,7 @@ body:
     attributes:
       label: URL Strony
       description: Na jakiej stronie występuje błąd? (możesz pominąć domenę)
-      placeholder: https://kompendium.kapios.dev/kompendium/teoria
+      placeholder: https://kompendiuminf.net/kompendium/teoria
     validations:
       required: true
   - type: dropdown
