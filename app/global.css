@@ -19,13 +19,13 @@
 }
 
 :root {
-    --teoria-color: hsl(245, 80%, 54%);
-    --programowanie-color: hsl(128, 60%, 40%);
-    --uzytkowe-color: hsl(30, 100%, 40%);
+    --teoria-color: hsl(227, 88%, 59%);
+    --programowanie-color: hsl(137, 80%, 36%);
+    --uzytkowe-color: hsl(317, 72%, 59%);
 }
 
 .dark {
-    --teoria-color: hsl(235, 100%, 75%);
-    --programowanie-color: hsl(128, 40%, 60%);
-    --uzytkowe-color: hsl(30, 100%, 76%);
+    --teoria-color: hsl(227, 80%, 59%);
+    --programowanie-color: hsl(137, 72%, 59%);
+    --uzytkowe-color: hsl(317, 69%, 59%);
   }

@@ -19,7 +19,13 @@ export function baseOptions(): BaseLayoutProps {
     ],
     githubUrl: 'https://github.com/kapios010/kompendium-inf',
     nav: {
-      title: 'Kompendium Inf*',
+      title: (
+        <span className='text-xl'>
+        <span className='font-black italic text-fd-primary mr-0.5'>$</span>
+        Kompendium
+        <span className='font-black italic text-fd-primary'>Inf;</span>
+        </span>
+      ),
     }
   };
 }
