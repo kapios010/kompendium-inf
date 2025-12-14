@@ -17,7 +17,7 @@ export function baseOptions(): BaseLayoutProps {
         url: '/blog'
       }
     ],
-    githubUrl: 'https://github.com/kapios010/kompendium-inf',
+    githubUrl: 'https://github.com/KompendiumInfDev/kompendium-inf',
     nav: {
       title: (
         <span className='text-xl'>
