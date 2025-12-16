@@ -1,7 +1,7 @@
 name: Błąd Rzeczowy
 description: Zgłoś stronę kompendium zawierającą niepoprawne lub niekompletne informacje.
 title: "[Błąd Rzeczowy]: "
-labels: ["Type: Rzeczówka"]
+type: Rzeczówka
 body:
   - type: input
     attributes:
