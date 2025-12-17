@@ -24,7 +24,7 @@ export default async function Page(props: PageProps<'/kompendium/[[...slug]]'>) 
             <EditOnGitHub href={`https://github.com/KompendiumInfDev/kompendium-inf/blob/main/content/kompendium/${page.path}`}>
               <Edit size={14}/> Edytuj na GitHubie
             </EditOnGitHub>
-            <EditOnGitHub href={`https://github.com/KompendiumInfDev/kompendium-inf/issues/new/choose`}>
+            <EditOnGitHub href={`https://github.com/KompendiumInfDev/kompendium-inf/issues`}>
               <Flag size={14}/> Zgłoś problem
             </EditOnGitHub>
             </div>
