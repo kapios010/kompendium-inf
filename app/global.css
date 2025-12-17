@@ -1,5 +1,5 @@
 @import 'tailwindcss';
-@import 'fumadocs-ui/css/solar.css';
+@import 'fumadocs-ui/css/dusk.css';
 @import 'fumadocs-ui/css/preset.css';
 
 @theme {
@@ -28,4 +28,8 @@
     --teoria-color: hsl(227, 80%, 59%);
     --programowanie-color: hsl(137, 72%, 59%);
     --uzytkowe-color: hsl(317, 69%, 59%);
+  }
+
+  #nd-page {
+    position: relative;
   }

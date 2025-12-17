@@ -30,7 +30,6 @@ export default function Layout({ children }: LayoutProps<'/'>) {
             SearchDialog,
           }}
         >
-          <Banner>UWAGA: Kompendium jest jeszcze we wczesnym etapie przygotowywania.</Banner>
           {children}
           </RootProvider>
       </Body>
