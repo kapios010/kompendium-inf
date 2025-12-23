@@ -6,5 +6,61 @@ description: Dodawanie, odejmowanie i mnożenie liczb w niedziesiętnych systema
 Działania na liczbach w innych systemach można wykonywać na tej samej zasadzie jak działania pisemne w systemie dzisiętnym, jednak z wzięciem pod uwagę zmienionej bazy. Poniżej opisane jest co należy zmienić, aby działania zostały wykonane poprawnie.
 
 ## Dodawanie
+
+<Steps>
+    <Step>
+    Bierzemy liczby, które chcemy do siebie dodać, np. $$123_6$$ i $$345_6$$.
+    </Step>
+    <Step>
+    Układamy je jak do dodawania pisemnego, i zaczynamy dodawanie od pierwszej kolumny na prawo.
+    ```math
+    \begin{matrix}
+      & 1 & 2 & 3 \\
+    + & 3 & 4 & 5 \\ \hline
+    ~
+    \end{matrix}
+    ```
+    </Step>
+    <Step>
+    Wynik dodawania ($$8$$) wykracza poza bazę systemu $$6$$, więc na dół wpisujemy $$2$$, czyli wynik odjęcia bazy systemu (normalnie $$10$$, tutaj $$6$$) od wyniku dodawania, a nad wcześniejszą kolumnę wpisujemy $$1$$.
+    ```math
+    \begin{matrix}
+      &   & 1 &   \\
+      & 1 & 2 & 3 \\
+    + & 3 & 4 & 5 \\ \hline
+      &   &   & 2
+    \end{matrix}
+    ```
+    </Step>
+    <Step>
+    Przechodzimy do następnej kolumny, w której wynik dodawania (z uwzględnieniem przeniesionej cyfry) $$7$$ też wykracza poza bazę systemu, więc powtarzamy poprzedni krok.
+    ```math
+    \begin{matrix}
+      & 1 & 1 &   \\
+      & 1 & 2 & 3 \\
+    + & 3 & 4 & 5 \\ \hline
+      &   & 1 & 2
+    \end{matrix}
+    ```
+    </Step>
+    <Step>
+    W ostatniej kolumnie wynik dodawania jest równy $$5$$, co nie wykracza poza bazę systemu, więc tą liczbę możemy po prostu wpisać na dole.
+    ```math
+    \begin{matrix}
+      & 1 & 1 &   \\
+      & 1 & 2 & 3 \\
+    + & 3 & 4 & 5 \\ \hline
+      & 5 & 1 & 2
+    \end{matrix}
+    ```
+    <Callout>
+    Tak samo jak w zwykłym dodawaniu pisemnym, jeśli wynik w ostatniej kolumnie jest wykracza poza bazę systemu, to dodajemy kolumnę na lewo.
+    </Callout>
+    </Step>
+    <Step>
+    Wynikiem naszego dodawania jest $$\utilde{512_6}$$. 
+    </Step>
+</Steps>
+
 ## Odejmowanie
 ## Mnożenie
