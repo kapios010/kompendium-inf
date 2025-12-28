@@ -33,7 +33,7 @@ export default async function Page(props: PageProps<'/kompendium/[[...slug]]'>) 
     const MDX = page.data.body
 
     return (
-        <DocsPage toc={page.data.toc} full={page.data.full} breadcrumb={{enabled: false}}>
+        <DocsPage toc={page.data.toc} tableOfContent={{style: 'clerk'}} full={page.data.full} breadcrumb={{enabled: false}}>
             <div className='flex flex-col-reverse md:flex-row gap-4'>
             <PageBreadcrumb includePage={true} />
             <PageEditOptions path={page.path} className='right-0 w-full md:justify-end'/>
