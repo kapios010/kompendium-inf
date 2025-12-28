@@ -9,56 +9,52 @@ Działania na liczbach w innych systemach można wykonywać na tej samej zasadzi
 
 <Steps>
     <Step>
-    Bierzemy liczby, które chcemy do siebie dodać, np. $$123_6$$ i $$345_6$$.
+    Bierzemy liczby, które chcemy do siebie dodać, np. $$1110_2$$ i $$0100_2$$.
     </Step>
     <Step>
-    Układamy je jak do dodawania pisemnego, i zaczynamy dodawanie od pierwszej kolumny na prawo.
+    Układamy je jak do dodawania pisemnego, i zaczynamy dodawanie od pierwszej kolumny w prawo.
     ```math
     \begin{matrix}
-      & 1 & 2 & 3 \\
-    + & 3 & 4 & 5 \\ \hline
+      & 1 & 1 & 1 & 0 \\
+    + & 0 & 1 & 0 & 0 \\ \hline
     ~
     \end{matrix}
     ```
     </Step>
     <Step>
-    Wynik dodawania ($$8$$) wykracza poza bazę systemu $$6$$, więc na dół wpisujemy $$2$$, czyli wynik odjęcia bazy systemu (normalnie $$10$$, tutaj $$6$$) od wyniku dodawania, a nad wcześniejszą kolumnę wpisujemy $$1$$.
+    Jeśli wynik dodawania w kolumnie jest mniejszy od bazy systemu, to bez przenoszenia wpisujemy go pod kreską. To dzieje się w pierwszych dwóch kolumnach.
     ```math
     \begin{matrix}
-      &   & 1 &   \\
-      & 1 & 2 & 3 \\
-    + & 3 & 4 & 5 \\ \hline
-      &   &   & 2
+      & 1 & 1 & 1 & 0 \\
+    + & 0 & 1 & 0 & 0 \\ \hline
+      &   &   & 1 & 0
     \end{matrix}
     ```
     </Step>
     <Step>
-    Przechodzimy do następnej kolumny, w której wynik dodawania (z uwzględnieniem przeniesionej cyfry) $$7$$ też wykracza poza bazę systemu, więc powtarzamy poprzedni krok.
+    Jeśli wynik dodawania jest większy lub równy bazie systemu, to odejmujemy od tego wyniku bazę, do następnej kolumny przenosimy $$1$$, a pod kreskę wpisujemy wynik odejmowania.
     ```math
     \begin{matrix}
-      & 1 & 1 &   \\
-      & 1 & 2 & 3 \\
-    + & 3 & 4 & 5 \\ \hline
-      &   & 1 & 2
+      & \it\scriptsize{1} \\
+      & 1 & 1 & 1 & 0 \\
+    + & 0 & 1 & 0 & 0 \\ \hline
+      &   & 0 & 1 & 0
     \end{matrix}
     ```
     </Step>
     <Step>
-    W ostatniej kolumnie wynik dodawania jest równy $$5$$, co nie wykracza poza bazę systemu, więc tą liczbę możemy po prostu wpisać na dole.
+    Tak samo jak w dodawaniu pisemnym w systemie dziesiętnym, jeśli wynik w ostatniej kolumnie przekracza bazę systemu, to dodajemy kolumnę na początku.
     ```math
     \begin{matrix}
-      & 1 & 1 &   \\
-      & 1 & 2 & 3 \\
-    + & 3 & 4 & 5 \\ \hline
-      & 5 & 1 & 2
+    & \it\scriptsize{1} & \it\scriptsize{1} \\
+      &   & 1 & 1 & 1 & 0 \\
+    + &   & 0 & 1 & 0 & 0 \\ \hline
+      & 1 & 0 & 0 & 1 & 0
     \end{matrix}
     ```
-    <Callout>
-    Tak samo jak w zwykłym dodawaniu pisemnym, jeśli wynik w ostatniej kolumnie jest wykracza poza bazę systemu, to dodajemy kolumnę na lewo.
-    </Callout>
     </Step>
     <Step>
-    Wynikiem naszego dodawania jest $$\utilde{512_6}$$. 
+    Wynikiem działania $$1110_2 + 0100_2$$ jest zatem $$10010_2$$.
     </Step>
 </Steps>
 
