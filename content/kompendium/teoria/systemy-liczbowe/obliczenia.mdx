@@ -9,52 +9,61 @@ Działania na liczbach w innych systemach można wykonywać na tej samej zasadzi
 
 <Steps>
     <Step>
-    Bierzemy liczby, które chcemy do siebie dodać, np. $$1110_2$$ i $$0100_2$$.
+      Bierzemy liczby, które chcemy do siebie dodać, np. $$1110_2$$ i $$0100_2$$.
     </Step>
+
     <Step>
-    Układamy je jak do dodawania pisemnego, i zaczynamy dodawanie od pierwszej kolumny w prawo.
-    ```math
-    \begin{matrix}
-      & 1 & 1 & 1 & 0 \\
-    + & 0 & 1 & 0 & 0 \\ \hline
-    ~
-    \end{matrix}
-    ```
+      Układamy je jak do dodawania pisemnego, i zaczynamy dodawanie od pierwszej kolumny w prawo.
+    
+      ```math
+      \begin{matrix}
+        & 1 & 1 & 1 & 0 \\
+      + & 0 & 1 & 0 & 0 \\ \hline
+      ~
+      \end{matrix}
+      ```
     </Step>
+  
     <Step>
-    Jeśli wynik dodawania w kolumnie jest mniejszy od bazy systemu, to bez przenoszenia wpisujemy go pod kreską. To dzieje się w pierwszych dwóch kolumnach.
-    ```math
-    \begin{matrix}
-      & 1 & 1 & 1 & 0 \\
-    + & 0 & 1 & 0 & 0 \\ \hline
-      &   &   & 1 & 0
-    \end{matrix}
-    ```
+      Jeśli wynik dodawania w kolumnie jest mniejszy od bazy systemu, to bez przenoszenia wpisujemy go pod kreską. To dzieje się w pierwszych dwóch kolumnach.
+    
+      ```math
+      \begin{matrix}
+        & 1 & 1 & 1 & 0 \\
+      + & 0 & 1 & 0 & 0 \\ \hline
+        &   &   & 1 & 0
+      \end{matrix}
+      ```
     </Step>
+  
     <Step>
-    Jeśli wynik dodawania jest większy lub równy bazie systemu, to odejmujemy od tego wyniku bazę, do następnej kolumny przenosimy $$1$$, a pod kreskę wpisujemy wynik odejmowania.
-    ```math
-    \begin{matrix}
-      & \it\scriptsize{1} \\
-      & 1 & 1 & 1 & 0 \\
-    + & 0 & 1 & 0 & 0 \\ \hline
-      &   & 0 & 1 & 0
-    \end{matrix}
-    ```
+      Jeśli wynik dodawania jest większy lub równy bazie systemu, to odejmujemy od tego wyniku bazę, do następnej kolumny przenosimy $$1$$, a pod kreskę wpisujemy wynik odejmowania.
+    
+      ```math
+      \begin{matrix}
+        & \it\scriptsize{1} \\
+        & 1 & 1 & 1 & 0 \\
+      + & 0 & 1 & 0 & 0 \\ \hline
+        &   & 0 & 1 & 0
+      \end{matrix}
+      ```
     </Step>
+  
     <Step>
-    Tak samo jak w dodawaniu pisemnym w systemie dziesiętnym, jeśli wynik w ostatniej kolumnie przekracza bazę systemu, to dodajemy kolumnę na początku.
-    ```math
-    \begin{matrix}
-    & \it\scriptsize{1} & \it\scriptsize{1} \\
-      &   & 1 & 1 & 1 & 0 \\
-    + &   & 0 & 1 & 0 & 0 \\ \hline
-      & 1 & 0 & 0 & 1 & 0
-    \end{matrix}
-    ```
+      Tak samo jak w dodawaniu pisemnym w systemie dziesiętnym, jeśli wynik w ostatniej kolumnie przekracza bazę systemu, to dodajemy kolumnę na początku.
+
+      ```math
+      \begin{matrix}
+        & \it\scriptsize{1} & \it\scriptsize{1} \\
+        &   & 1 & 1 & 1 & 0 \\
+      + &   & 0 & 1 & 0 & 0 \\ \hline
+        & 1 & 0 & 0 & 1 & 0
+      \end{matrix}
+      ```
     </Step>
+  
     <Step>
-    Wynikiem działania $$1110_2 + 0100_2$$ jest zatem $$\utilde{10010_2}$$.
+      Wynikiem działania $$1110_2 + 0100_2$$ jest zatem $$\utilde{10010_2}$$.
     </Step>
 </Steps>
 
@@ -62,57 +71,61 @@ Działania na liczbach w innych systemach można wykonywać na tej samej zasadzi
 
 <Steps>
     <Step>
-    Bierzemy liczby, które chcemy od siebie odjąć, np. $$1010_2$$ i $$0110_2$$.
+      Bierzemy liczby, które chcemy od siebie odjąć, np. $$1010_2$$ i $$0110_2$$.
     </Step>
 
     <Step>
-    Wstawiamy je jak do odejmowania pisemnego, i zaczynamy od ostatniej kolumny.
-    ```math
-    \begin{matrix}
-      & 1 & 0 & 1 & 0 \\
-    - & 0 & 1 & 1 & 0 \\ \hline
-    ~
-    \end{matrix}
-    ```
-    </Step>
+      Wstawiamy je jak do odejmowania pisemnego, i zaczynamy od ostatniej kolumny.
     
-    <Step>
-    Pierwsze dwie kolumny odejmujemy normalnie.
-    ```math
-    \begin{matrix}
-      & 1 & 0 & 1 & 0 \\
-    - & 0 & 1 & 1 & 0 \\ \hline
-      &   &   & 0 & 0
-    \end{matrix}
-    ```
-    </Step>
-    
-    <Step>
-    Przy 'pożyczaniu' liczb z kolumny na lewo do liczby w obecnej kolumnie dodajemy bazę systemu, tak jak dodalibyśmy $$10$$ w systemie dziesiętnym.
-    ```math
-    \begin{matrix}
-      & \it\scriptsize 0 & \it\scriptsize 2 ~ \\
-      &        \cancel 1 &        \cancel 0 & 1 & 0 \\
-    - &                0 &                1 & 1 & 0 \\ \hline
-      &                  &                1 & 0 & 0
-    \end{matrix}
-    ```
-    </Step>
-  
-    <Step>
-    Kontynuujemy w ostatniej kolumnie.
       ```math
-    \begin{matrix}
-      & \it\scriptsize 0 & \it\scriptsize 2 ~ \\
-      &        \cancel 1 &        \cancel 0 & 1 & 0 \\
-    - &                0 &                1 & 1 & 0 \\ \hline
-      &                0 &                1 & 0 & 0
-    \end{matrix}
-    ```
+      \begin{matrix}
+        & 1 & 0 & 1 & 0 \\
+      - & 0 & 1 & 1 & 0 \\ \hline
+      ~
+      \end{matrix}
+      ```
+    </Step>
+    
+    <Step>
+      Pierwsze dwie kolumny odejmujemy normalnie.
+    
+    ```math
+      \begin{matrix}
+        & 1 & 0 & 1 & 0 \\
+      - & 0 & 1 & 1 & 0 \\ \hline
+        &   &   & 0 & 0
+      \end{matrix}
+      ```
+    </Step>
+    
+    <Step>
+      Przy 'pożyczaniu' liczb z kolumny na lewo do liczby w obecnej kolumnie dodajemy bazę systemu, tak jak dodalibyśmy $$10$$ w systemie dziesiętnym.
+  
+      ```math
+      \begin{matrix}
+        & \it\scriptsize 0 & \it\scriptsize 2 ~ \\
+        &        \cancel 1 &        \cancel 0 & 1 & 0 \\
+      - &                0 &                1 & 1 & 0 \\ \hline
+        &                  &                1 & 0 & 0
+      \end{matrix}
+      ```
     </Step>
   
     <Step>
-    Wynikiem odejmowania $$1010_2 - 0110_2$$ jest $$\utilde{100_2}$$.
+      Kontynuujemy w ostatniej kolumnie.
+  
+      ```math
+      \begin{matrix}
+        & \it\scriptsize 0 & \it\scriptsize 2 ~ \\
+        &        \cancel 1 &        \cancel 0 & 1 & 0 \\
+      - &                0 &                1 & 1 & 0 \\ \hline
+        &                0 &                1 & 0 & 0
+      \end{matrix}
+      ```
+    </Step>
+  
+    <Step>
+      Wynikiem odejmowania $$1010_2 - 0110_2$$ jest $$\utilde{100_2}$$.
     </Step>
 </Steps>
 
@@ -122,98 +135,99 @@ Działania na liczbach w innych systemach można wykonywać na tej samej zasadzi
 
 <Steps>
     <Step>
-    Bierzemy dwie liczby, które chcemy ze sobą pomnożyć, np $$\text{12B}_{16}$$ i $$32_{16}$$.
+        Bierzemy dwie liczby, które chcemy ze sobą pomnożyć, np $$\text{12B}_{16}$$ i $$32_{16}$$.
     </Step>
     
     <Step>
-    Podstawiamy je jak do mnożenia pisemnego i zaczynamy mnożenie pisemne.
+      Podstawiamy je jak do mnożenia pisemnego i zaczynamy mnożenie pisemne.
   
-    <Callout type="idea">
-    Osobiście lubię zamieniać litery w systemach, które je mają na liczby w nawiasach, np. $$⟮11⟯$$, łatwiej jest mi wtedy wykonywać na nich obliczenia. 
-    </Callout>
+      <Callout type="idea">
+        Osobiście lubię zamieniać litery w systemach, które je mają na liczby w nawiasach, np. $$⟮11⟯$$,
+        łatwiej jest mi wtedy wykonywać na nich obliczenia. 
+      </Callout>
   
-    ```math
-    \begin{matrix}
-      & 1 & 2 & ⟮11⟯ \\
-    * &   & 3 & 2   \\ \hline
-    ~
-    \end{matrix}
-    ```
+      ```math
+      \begin{matrix}
+        & 1 & 2 & ⟮11⟯ \\
+      * &   & 3 & 2   \\ \hline
+      ~
+      \end{matrix}
+      ```
     </Step>
   
     <Step>
-    Wynik pierwszego mnożenia $$2*11 = 22$$ jest większy od bazy systemu $$16$$, więc dzielimy go przez tą bazę.
-    Część całkowitą przenosimy do następnej kolumny, a resztę wpisujemy pod kreskę.
+      Wynik pierwszego mnożenia $$2*11 = 22$$ jest większy od bazy systemu $$16$$, więc dzielimy go przez tą bazę.
+      Część całkowitą przenosimy do następnej kolumny, a resztę wpisujemy pod kreskę.
   
-    ```math
-    \begin{matrix}
-      &   & \scriptsize\it{1} &     \\
-      & 1 & 2                 & ⟮11⟯ \\
-    * &   & 3                 & 2   \\ \hline
-      &   &                   & 6
-    \end{matrix}
-    ```
+      ```math
+      \begin{matrix}
+        &   & \scriptsize\it{1} &     \\
+        & 1 & 2                 & ⟮11⟯ \\
+      * &   & 3                 & 2   \\ \hline
+        &   &                   & 6
+      \end{matrix}
+      ```
     </Step>
     
     <Step>
-    Kontynuujemy z następnym mnożeniem $$2*2=4$$, i tak samo jak w normalnym mnożeniu pisemnym dodajemy do tego wyniku przeniesienie $$4+1=5$$.
-    Ten wynik nie jest większy od bazy systemu więc przenosimy go pod kreskę.
+      Kontynuujemy z następnym mnożeniem $$2*2=4$$, i tak samo jak w normalnym mnożeniu pisemnym dodajemy do tego wyniku przeniesienie $$4+1=5$$.
+      Ten wynik nie jest większy od bazy systemu więc przenosimy go pod kreskę.
   
-    ```math
-    \begin{matrix}
-      &   & \scriptsize\it{1} &     \\
-      & 1 & 2                 & ⟮11⟯ \\
-    * &   & 3                 & 2   \\ \hline
-      &   & 5                 & 6
-    \end{matrix}
-    ```      
+      ```math
+      \begin{matrix}
+        &   & \scriptsize\it{1} &     \\
+        & 1 & 2                 & ⟮11⟯ \\
+      * &   & 3                 & 2   \\ \hline
+        &   & 5                 & 6
+      \end{matrix}
+      ```      
     </Step>
   
     <Step>
-    Ostatnie mnożenie przez dwa zachodzi normalnie i daje wynik $$1$$.
+      Ostatnie mnożenie przez dwa zachodzi normalnie i daje wynik $$1$$.
     
-    ```math
-    \begin{matrix}
-      &   & \scriptsize\it{1} &     \\
-      & 1 & 2                 & ⟮11⟯ \\
-    * &   & 3                 & 2   \\ \hline
-      & 2 & 5                 & 6
-    \end{matrix}
-    ```    
+      ```math
+      \begin{matrix}
+        &   & \scriptsize\it{1} &     \\
+        & 1 & 2                 & ⟮11⟯ \\
+      * &   & 3                 & 2   \\ \hline
+        & 2 & 5                 & 6
+      \end{matrix}
+      ```    
     </Step>
   
     <Step>
-    W podobny sposób wykonujemy mnożenie przez $$3$$, pamiętając o przesunięciu drugiego wyniku o kolumnę.
+      W podobny sposób wykonujemy mnożenie przez $$3$$, pamiętając o przesunięciu drugiego wyniku o kolumnę.
 
-    ```math
-    \begin{matrix}
-      &   & \scriptsize\it{2}         &     \\
-      &   & \scriptsize\it\xcancel{1} &     \\
-      & 1 & 2                         & ⟮11⟯ \\
-    * &   & 3                         & 2   \\ \hline
-      & 2 & 5                         & 6   \\
-    3 & 8 & 1
-    \end{matrix}
-    ```  
+      ```math
+      \begin{matrix}
+        &   & \scriptsize\it{2}         &     \\
+        &   & \scriptsize\it\xcancel{1} &     \\
+        & 1 & 2                         & ⟮11⟯ \\
+      * &   & 3                         & 2   \\ \hline
+        & 2 & 5                         & 6   \\
+      3 & 8 & 1
+      \end{matrix}
+      ```  
     </Step>
   
     <Step>
-    Dodajemy ze sobą dwie powstałe liczby. (Instrukcję dodawania można znaleźć [powyżej](#dodawanie))
+      Dodajemy ze sobą dwie powstałe liczby. (Instrukcję dodawania można znaleźć [powyżej](#dodawanie))
   
-    ```math
-    \begin{matrix}
-      &   &       & \scriptsize\it{2}         &     \\
-      &   &       & \scriptsize\it\xcancel{1} &     \\
-      &   & 1     & 2                         & ⟮11⟯ \\
-      & * &       & 3                         & 2   \\ \hline
-      &   & 2     & 5                         & 6   \\
-    + & 3 & 8     & 1                         &     \\ \hline
-      & 3 & ⟮10⟯   & 6                         & 6
-    \end{matrix}
-    ```  
+      ```math
+      \begin{matrix}
+        &   &       & \scriptsize\it{2}         &     \\
+        &   &       & \scriptsize\it\xcancel{1} &     \\
+        &   & 1     & 2                         & ⟮11⟯ \\
+        & * &       & 3                         & 2   \\ \hline
+        &   & 2     & 5                         & 6   \\
+      + & 3 & 8     & 1                         &     \\ \hline
+        & 3 & ⟮10⟯   & 6                         & 6
+      \end{matrix}
+      ```  
     </Step>
   
     <Step>
-    Wynikiem mnożenia jest liczba pod kreską, $$\utilde{\text{3A66}_{16}}$$.
+      Wynikiem mnożenia jest liczba pod kreską, $$\utilde{\text{3A66}_{16}}$$.
     </Step>
 </Steps>
