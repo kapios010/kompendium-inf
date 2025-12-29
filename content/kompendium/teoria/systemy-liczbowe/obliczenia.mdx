@@ -59,4 +59,61 @@ Działania na liczbach w innych systemach można wykonywać na tej samej zasadzi
 </Steps>
 
 ## Odejmowanie
+
+<Steps>
+    <Step>
+    Bierzemy liczby, które chcemy od siebie odjąć, np. $$1010_2$$ i $$0110_2$$.
+    </Step>
+
+    <Step>
+    Wstawiamy je jak do odejmowania pisemnego, i zaczynamy od ostatniej kolumny.
+    ```math
+    \begin{matrix}
+      & 1 & 0 & 1 & 0 \\
+    - & 0 & 1 & 1 & 0 \\ \hline
+    ~
+    \end{matrix}
+    ```
+    </Step>
+    
+    <Step>
+    Pierwsze dwie kolumny odejmujemy normalnie.
+    ```math
+    \begin{matrix}
+      & 1 & 0 & 1 & 0 \\
+    - & 0 & 1 & 1 & 0 \\ \hline
+      &   &   & 0 & 0
+    \end{matrix}
+    ```
+    </Step>
+    
+    <Step>
+    Przy 'pożyczaniu' liczb z kolumny na lewo do liczby w obecnej kolumnie dodajemy bazę systemu, tak jak dodalibyśmy $$10$$ w systemie dziesiętnym.
+    ```math
+    \begin{matrix}
+      & \it\scriptsize 0 & \it\scriptsize 2 ~ \\
+      &        \cancel 1 &        \cancel 0 & 1 & 0 \\
+    - &                0 &                1 & 1 & 0 \\ \hline
+      &                  &                1 & 0 & 0
+    \end{matrix}
+    ```
+    </Step>
+  
+    <Step>
+    Kontynuujemy w ostatniej kolumnie.
+      ```math
+    \begin{matrix}
+      & \it\scriptsize 0 & \it\scriptsize 2 ~ \\
+      &        \cancel 1 &        \cancel 0 & 1 & 0 \\
+    - &                0 &                1 & 1 & 0 \\ \hline
+      &                0 &                1 & 0 & 0
+    \end{matrix}
+    ```
+    </Step>
+  
+    <Step>
+    Wynikiem odejmowania $$1010_2 - 0110_2$$ jest $$100_2$$.
+    </Step>
+</Steps>
+
 ## Mnożenie
