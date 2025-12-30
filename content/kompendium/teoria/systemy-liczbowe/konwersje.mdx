@@ -8,12 +8,12 @@ description: Przekształcanie liczby z jednego systemu na drugi
 
 <Steps>
 <Step>
-    Bierzemy oryginalną liczbę w jakimś systemie, na przykład $$1234_{5}$$ w systemie piątkowym
+    Bierzemy oryginalną liczbę w jakimś systemie, na przykład $$1234_{5}$$ w systemie piątkowym.
 </Step>
 <Step>
-    Każdą jej cyfrę mnożymy przez bazę systemu ($$5$$) podniesioną do odpowiedniej potęgi
+    Każdą jej cyfrę mnożymy przez bazę systemu ($$5$$) podniesioną do odpowiedniej potęgi.
 
-    <Callout type="idea">
+    <Callout>
         Ostatnią cyfrę zawsze mnożymy przez bazę do potęgi 0, czyli przez 1. Przedostatnią mnożymy przez bazę do potęgi 1, wcześniejszą przez bazę do kwadratu, itd.
     </Callout>
 
@@ -25,7 +25,7 @@ description: Przekształcanie liczby z jednego systemu na drugi
 </Step>
 
 <Step>
-    Sumujemy wyniki mnożenia
+    Sumujemy wyniki mnożenia.
 
     ```math
     125 + 50 + 15 + 4 = 194
@@ -33,7 +33,7 @@ description: Przekształcanie liczby z jednego systemu na drugi
 </Step>
 
 <Step>
-    Wynikiem konwersji jest $$\utilde{194_{10}}$$
+    Wynikiem konwersji jest $$\utilde{194_{10}}$$.
 </Step>
 </Steps>
 
@@ -42,14 +42,14 @@ description: Przekształcanie liczby z jednego systemu na drugi
 <Steps>
 
 <Step>
-    Bierzemy oryginalną liczbę w systemie dziesiętnym, np. $$54321_{10}$$
+    Bierzemy oryginalną liczbę w systemie dziesiętnym, np. $$654321_{10}$$.
 </Step>
 
 <Step>
-    Dzielimy tą liczbę przez bazę systemu, na który chcemy ją zamienić, na przykład $$6$$, i bierzemy resztę z dzielenia.
+    Dzielimy tą liczbę przez bazę systemu, na który chcemy ją zamienić, na przykład $$16$$, i bierzemy resztę z dzielenia.
 
     ```math
-    54321 \div 6 = 9053\; r\; 3
+    654321 \div 16 = 40895\; r\; 1
     ```
 </Step>
 
@@ -57,14 +57,12 @@ description: Przekształcanie liczby z jednego systemu na drugi
     Kontynuujemy ten proces dla części całkowitej z dzielenia, dopóki część całkowita nie równa się 0.
 
     ```math
-    \begin {alignat*}{3}
-    \textcolor{grey}{54321 \div 6 = 9053\; r\; 3}\\
-    9053 \div 6 = 1508\; r\; 5\\
-    1508 \div 6 = 251\; r\; 2\\
-    251 \div 6 = 41\; r\; 5\\
-    41 \div 6 = 6\; r\; 5\\
-    6 \div 6 = 1\; r\; 0\\
-    1 \div 6 = 0\; r\; 1
+    \begin {alignat*}{2}
+    \color{grey} 654321 \div 16 = 40895 \enspace & \color{grey} r \enspace & \color{grey} 1 \\
+    40895 \div 16 = 2555                \enspace & r \enspace & 15 & =\text{F} \\
+    2555 \div 16 = 159                  \enspace & r \enspace & 11 & =\text{B} \\
+    159 \div 16 = 9                     \enspace & r \enspace & 15 & =\text{F} \\
+    9 \div 16 = 0                       \enspace & r \enspace & 9
     \end{alignat*}
     ```
 </Step>
@@ -73,7 +71,7 @@ description: Przekształcanie liczby z jednego systemu na drugi
     Odczytujemy otrzymane reszty z dzielenia **od dołu do góry**. Ta liczba jest naszym wynikiem.
 
     ```math
-        54321_{10} = \utilde{1055253_6}
+    654321_{10} = \utilde{\text{9FBF1}_{16}}
     ```
 </Step>
 </Steps>

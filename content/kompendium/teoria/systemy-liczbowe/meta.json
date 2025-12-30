@@ -4,6 +4,7 @@
     "defaultOpen":true,
     "collapsible": false,
     "pages": [
-        "konwersje"
+        "konwersje",
+        "obliczenia"
     ]
 }
