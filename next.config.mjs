@@ -8,7 +8,6 @@ const config = {
     turbopack: {
         root: path.resolve('.')
     },
-    output: 'export',
     reactStrictMode: true
 }
 
